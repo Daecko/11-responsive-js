@@ -1,0 +1,266 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-y: hidden;
+    color: white;
+    background: var(--Very-Dark-Blue, #131518);
+}
+.rate{
+    display: flex;
+    width: 412px;
+    height: 416px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
+}
+.rate-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem;
+}
+#star-background{
+    margin-top:0;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: var(--Dark-Blue, #262E38);
+}
+#star-icon{
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+#rate-title{
+    margin-top:0;
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Overpass;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#rate-desc{
+    margin-top:0;
+    color: var(--Light-Grey, #969FAD);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Overpass;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+}
+.rating{
+    display: flex;
+    justify-content: space-around;
+}
+.rate-btn{
+    color: var(--Medium-Gray, #7C8798);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Overpass;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.2px;
+    width: 51px;
+    height: 51px;
+    flex-shrink: 0;
+    background-color: var(--Dark-Blue, #262E38);
+    border-radius: 100%;
+    border-width: 0;
+}
+.rate-btn:hover{
+    cursor: pointer;
+    background: var(--Medium-Gray, #7C8798);
+    color: var(--Pure-White, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Overpass;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.2px;
+}
+.rate-btn:active{
+    background: var(--Orange, #FC7614);
+    color: var(--Pure-White, #FFF);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Overpass;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.2px;
+}
+#submitting{
+    display: flex;
+    justify-content: center;
+}
+#submit-btn{
+    width: 341px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 22.5px;
+    background: var(--Orange, #FC7614);
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Overpass;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    border-width: 0;
+}
+#submit-btn:hover{
+    cursor: pointer;
+    background: var(--Pure-White, #FFF);
+    color: var(--Orange, #FC7614);
+}
+.thank-wrap{
+    margin: 2rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.rate-result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 193px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 22.5px;
+    background: var(--Dark-Blue, #262E38);
+    color: var(--Orange, #FC7614);
+    text-align: center;
+    font-family: Overpass;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+}
+#thanks-h{
+    margin-bottom: 0;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Overpass;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#thanks-desc{
+    color: var(--Light-Grey, #969FAD);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Overpass;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+}
+@media only screen and (max-width: 480px) {
+    .rate{
+        display: flex;
+        width: 327px;
+        height: 360px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
+    }
+    .rate-wrap{
+        margin: 1rem;
+    }
+    #star-background{
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+    #rate-title{
+        color: var(--Pure-White, #FFF);
+        font-family: Overpass;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    #rate-desc{
+        color: var(--Light-Grey, #969FAD);
+        font-family: Overpass;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 157.143% */
+    }
+    .rate-btn{
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+        color: var(--Medium-Gray, #7C8798);
+        text-align: center;
+        font-family: Overpass;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 171.429% */
+        letter-spacing: 0.175px;
+    }
+    #submit-btn{
+        width: 279px;
+        height: 45px;
+        flex-shrink: 0;
+        color: var(--Pure-White, #FFF);
+        font-family: Overpass;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.867px;
+    }
+    .rate-result{
+        margin-top: 1rem;
+        width: 168px;
+        height: 32px;
+        flex-shrink: 0;
+        color: var(--Orange, #FC7614);
+        text-align: center;
+        font-family: Overpass;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 157.143% */
+    }
+    #thanks-h{
+        color: var(--Pure-White, #FFF);
+        text-align: center;
+        font-family: Overpass;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    #thanks-desc{
+        color: var(--Light-Grey, #969FAD);
+        text-align: center;
+        font-family: Overpass;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 157.143% */
+    }
+}
